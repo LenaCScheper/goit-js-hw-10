@@ -1,5 +1,5 @@
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { refs } from './index';
+import {Notify} from 'notiflix/build/notiflix-notify-aio';
+import {refs} from './index';
 
 export function fetchCountries(countryName) {
   const url = `https://restcountries.com/v3.1/name/${countryName}?fields=name,capital,population,flags,languages`;
