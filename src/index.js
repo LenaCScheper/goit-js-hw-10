@@ -15,7 +15,6 @@ let markup = '';
 
 refs.searchBox.addEventListener('input', debounce(onSearchBoxInput, DEBOUNCE_DELAY));
 
-
 function onSearchBoxInput(e) {
   const countryName = e.target.value.trim();
   fetchCountries(countryName).then(renderCountryCard);
