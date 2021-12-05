@@ -11,7 +11,7 @@ export function fetchCountries(countryName) {
   }
   return fetch(url).then(response => {
     if (!response.ok) {
-      Notify.failure('Sorry, we could not find country for you');
+      Notify.failure('Oops, there is no country with that name');
       refs.countryCardContainer.innerHTML = '';
 
       throw new Error(response.status);
@@ -21,4 +21,4 @@ export function fetchCountries(countryName) {
   });
 }
 
-//------получаем страны ---------
+
